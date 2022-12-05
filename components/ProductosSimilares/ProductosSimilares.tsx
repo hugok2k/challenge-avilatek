@@ -8,12 +8,12 @@ const licores = [
     img: '/licor1.webp',
   },
   {
-    name: 'Licor 1',
+    name: 'Licor 2',
     price: '$99.99',
     img: '/licor1.webp',
   },
   {
-    name: 'Licor 1',
+    name: 'Licor 3',
     price: '$99.99',
     img: '/licor1.webp',
   },
@@ -31,7 +31,10 @@ export default function ProductosSimilares() {
 
       <div className=" grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-20 mb-16">
         {licores.map((licor) => (
-          <div className="flex items-center justify-center flex-col w-56">
+          <div
+            className="flex items-center justify-center flex-col w-56"
+            key={licor.name}
+          >
             <img src={licor.img} alt={licor.name} className="w-96" />
             <div className="flex justify-start flex-col items-start">
               <h3 className="text-center text-xl text-primary-500 font-bold">
