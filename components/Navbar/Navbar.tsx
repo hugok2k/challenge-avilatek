@@ -18,7 +18,7 @@ export default function Navbar() {
               className="focus-within:ring-0 border-0 border-b focus:outline-none sm:w-48 lg:w-[500px] border-[#d4d4d4]"
               type="text"
             />
-            <AiOutlineSearch className="absolute mr-4 fill-primary-100" />
+            <AiOutlineSearch className="absolute mr-4 fill-primary-100 cursor-pointer" />
           </div>
           <div className="flex items-center gap-6 1 text-primary-100  leading-7">
             <Link
